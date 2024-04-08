@@ -1,7 +1,5 @@
 #Github Link : https://github.com/saidineshgelam/enpm661_project3_phase2.git
 
-
-
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import numpy as np
