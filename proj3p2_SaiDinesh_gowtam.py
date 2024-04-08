@@ -2,11 +2,9 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import numpy as np
 import math
-import json
 import cv2
 from queue import PriorityQueue
 from matplotlib import pyplot as plt
-import time
 
 
 class PossibleNode :
