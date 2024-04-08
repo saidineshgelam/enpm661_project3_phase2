@@ -1,3 +1,7 @@
+#Github Link : https://github.com/saidineshgelam/enpm661_project3_phase2.git
+
+
+
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 import numpy as np
@@ -283,11 +287,9 @@ def a_star_implementation(first_point, end_point, first_orentation):
             while x>0.1:
                 possible_next_node = move(this_node_, action)
                
-                #    print(possible_next_node)
                 if possible_next_node is not None:
                             this_node = possible_next_node
                             new_coordinate = possible_next_node.get_points()
-                            # print(new_coordinate)
                             if new_coordinate not in fixed_list:
                                 if new_coordinate not in visited:
                                     # Add the possible next node to the priority queue, visited dictionary, and fixed list
@@ -304,7 +306,6 @@ def a_star_implementation(first_point, end_point, first_orentation):
                                             cv2.waitKey(10)
                                             writer_video.write(frame_resized)
                                         
-                                            # print(list)
                                     
                                         
                                 else:
